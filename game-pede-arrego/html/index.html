@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pede Arrego</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+    <div class="game-screen">
+
+        <div class="header">
+            <div class="lifes">
+                <p>HEARTS</p>
+                <img src="../src/icons8-gostar-64.png" alt="" srcset="" class="heart-icon-red" id="heart-red-1">
+                <img src="../src/icons8-gostar-100.png" alt="" srcset="" class="heart-icon">
+                <img src="../src/icons8-gostar-64.png" alt="" srcset="" class="heart-icon-red" id="heart-red-2">
+                <img src="../src/icons8-gostar-100.png" alt="" srcset="" class="heart-icon">
+                <img src="../src/icons8-gostar-64.png" alt="" srcset="" class="heart-icon-red" id="heart-red-3">
+                <img src="../src/icons8-gostar-100.png" alt="" srcset="" class="heart-icon">
+                
+            </div>
+            <div class="title">
+                <h1>PEDE ARREGO!</h1>
+            </div>
+            <div class="points-div">
+                <p>PONTUATION</p>
+                <p id="pontuation">0</p>
+            </div>
+        </div>
+
+        <div class="black-screen">
+            <div class="equation-div">
+                <p id="equation">f(x) = ax² + bx + c</p>
+            </div>
+            <div class="answer">
+                <input type="text" name="" id="answer-label">            
+            </div>
+        </div>
+
+        <div class="buttons-play">
+            <button type="button" class="arrego-button" onclick="pedirArrego()">Pedir Arrego!</button>
+            <button type="button" class="answer-button" onclick="answer()">Responder</button>
+        </div>
+    </div>
+</div>
+    <div class="win-container hide-object">
+        <div class="win-card">
+            <h2 id="win-text-title">PARABÉNS</h2>
+            <p id="win-text">Você ganhou!</p>
+            <button type="button" class="next-button" onclick="nextLevel()">Recomeçar</button>
+        </div>
+    </div>
+    
+</body>
+    <script src="../javascript/engine.js"></script>
+</html>
